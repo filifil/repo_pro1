@@ -1,18 +1,10 @@
-q1=int(input('what is 3* 4?:'))
-contenuequstion=True
-if q1 != 12:
-    contenuequstion=False
+num = int(input('Enter a number:'))
+
+if num > 1000 and num < 2000:
+    print('This number is between 1000 and 2000:')
+elif num < 1000:
+    print('This number is lower than 1000:')
+elif num > 2000:
+    print('This number is greater than 2000:')
 else:
-    print("That is correct!")
-    q2=int(input('what is 6* 5?:'))
-    if q2 != 30:
-        contenuequstion=False
-    else:
-        print("That is also correct!")
-        q3=int(input('what is 7* 8?:'))
-        if q3 != 56:
-            contenuequstion=False
-        else:
-            print('correct!you pass the test')
-if not contenuequstion:
-    print('That is False,you failed the test')
+    print('excluded:')
