@@ -1,11 +1,13 @@
-num = int(input('Enter a number:'))
+a = int(input('Enter the 1st number:'))
+b = int(input('Enter the 2nd number:'))
+c = int(input('Enter the 3rd number:'))
+d = int(input('Enter the 4th number:'))
 
-if num > 1000 and num < 2000:
-    print('This number is between 1000 and 2000:')
-elif num < 1000:
-    print('This number is lower than 1000:')
-elif num > 2000:
-    print('This number is greater than 2000:')
+if a > b and a > c and a > d:
+    print('The largest number is',a)
+elif b > a and b > c and b > d:
+    print('The largest number is',b)
+elif c > a and c > b and c >d:
+    print('The lagest number is',c)
 else:
-    print('excluded:')
-    
+    print('The largest number is',d)
